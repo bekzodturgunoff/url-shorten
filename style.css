@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+
+:root {
+  --cyan: hsl(180, 66%, 49%);
+  --dark: hsl(257, 27%, 26%);
+  --red: hsl(0, 87%, 67%);
+  --grey: hsl(0, 0%, 75%);
+  --grayish-violet: hsla(258, 7%, 63%, 0.303);
+  --dark-blue: hsl(255, 11%, 22%);
+  --dark-violet: hsl(260, 8%, 14%);
+
+  --primary-font: "Poppins", sans-serif;
+}
+
+body {
+  font-family: var(--primary-font);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  color: var(--greyish-viloet);
+}
+h1,
+h2,
+h3 {
+  color: var(--dark-violet);
+}
+
+header,
+.hero,
+.statistics,
+.footer-container {
+  max-width: 1440px;
+  margin: auto;
+  padding: 1rem;
+}
+
+nav,
+.logo-links,
+.logo-links ul,
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-links ul,
+.logo-links {
+  gap: 2rem;
+}
+
+.hero {
+  margin-bottom: 13rem;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 5rem;
+}
+
+.register-btn,
+.hero-btn,
+.action-btn,
+.boost-btn {
+  width: 120px;
+  height: 2.5rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: #fff;
+  transition: transform 100ms ease-out;
+}
+
+.register-btn:active,
+.hero-btn:active,
+.action-btn:active,
+.boost-btn:active {
+  transform: scale(0.9);
+}
+
+.action-btn,
+.action input {
+  border-radius: 10px;
+  height: 3.5rem;
+  border: none;
+  outline: none;
+}
+
+.hero-btn {
+  width: 200px;
+}
+
+.color {
+  background-color: var(--cyan);
+  color: #fff;
+}
+
+.hero-img {
+  position: relative;
+  width: 580px;
+  height: 500px;
+}
+
+.hero-img img {
+  position: absolute;
+  left: 0;
+}
+.action-container {
+  position: relative;
+}
+
+.shorten {
+  height: 170px;
+  background-image: url(./images/bg-shorten-desktop.svg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--dark);
+  width: 1100px;
+  margin: auto;
+  gap: 1rem;
+  position: absolute;
+  top: 89%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+
+.action input {
+  width: 850px;
+  text-indent: 1rem;
+  font-size: 1.3rem;
+}
+
+.statistics-background {
+  background-color: var(--grayish-violet);
+  height: 760px;
+}
+
+.statistics {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.statistics-text {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.statistics-items {
+  position: relative;
+  display: flex;
+  height: 410px;
+}
+
+.statistics-item-line {
+  width: 100%;
+  height: 8px;
+  background-color: var(--cyan);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.item-1,
+.item-2,
+.item-3 {
+  position: absolute;
+  width: 350px;
+  height: 200px;
+}
+
+.item-2 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.item-3 {
+  right: 0;
+  top: 9rem;
+}
+
+.statistics-item {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  width: 350px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  height: 200px;
+}
+
+.statistics-item h3 {
+  margin-top: 2rem;
+}
+
+.statistics-item img {
+  width: 60px;
+  background-color: var(--dark);
+  padding: 1rem;
+  border-radius: 50%;
+  margin-top: -5rem;
+}
+
+.boost {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-image: url(./images/bg-boost-desktop.svg);
+  background-color: var(--dark);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  color: #fff;
+}
+
+.boost h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+footer {
+  background-color: var(--dark-blue);
+}
+
+footer a {
+  color: var(--grey);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.footer-links-icons,
+.footer-links {
+  display: flex;
+  gap: 5rem;
+}
+
+.footer-link {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer-link ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.footer-links span {
+  color: #fff;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-icons img,
+.footer-icons a {
+  width: 30px;
+  height: 30px;
+}
